@@ -1,0 +1,3 @@
+1 - A função de dobramento consegue alterar a matriz no bloco principal sem emitir um retorno de dados pois a passagem de um vetor em C transfere diretamente o endereço de memória original aos parâmetros da função invocada.   
+2 - A impressão na consola poderá demonstrar dois endereços consecutivos de inteiros como 0x7ffe39b4a100 e 0x7ffe39b4a104, indicando inequivocamente uma diferença de 4 bytes.   
+3 - O AddressSanitizer identificou um transbordo de capacidade na pilha de execução originado por uma gravação em memória não alocada. Sem o sanitizador, a anomalia passaria despercebida por ausência de uma verificação automática dos limites dos vetores no protocolo de execução padrão da linguagem C.  
